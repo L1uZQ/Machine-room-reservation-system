@@ -111,6 +111,9 @@ void Manager::initVector()
 		return ;
 	}
 
+	vStu.clear();
+	vTea.clear();
+
 	Student s;
 	while (ifs >> s.m_Id && ifs >> s.m_Name && ifs >> s.m_Pwd)
 	{
