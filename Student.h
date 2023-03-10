@@ -3,6 +3,9 @@
 using namespace std;
 
 #include "Identity.h"
+#include<vector>
+#include"globalFile.h"
+
 
 class Student :public Identity
 {
@@ -23,8 +26,10 @@ public:
 
 	void candelOrder(); //取消预约
 
+	//friend void Manager::initVector(); //由于需要访问私有成员，定义为友元
+	int m_Id;  	//学号
 
 private:
-	//学号
-	int m_id;
+
+
 };
